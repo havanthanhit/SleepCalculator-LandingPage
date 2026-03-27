@@ -8,54 +8,72 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: linear-gradient(180deg, #3a5bdc, #1e2a78);
-      color: white;
+      background: #ffffff;
+      color: #000000;
       text-align: center;
       padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .container {
       max-width: 500px;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app-icon {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 10px;      
+      border-radius: 32px;    
     }
 
     h1 {
       font-size: 32px;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
     }
 
     p {
-      opacity: 0.9;
-      margin-bottom: 30px;
+      opacity: 0.8;
+      margin-bottom: 20px;
     }
 
-    .button {
+    .download-btn {
       display: inline-block;
-      padding: 12px 20px;
-      background: white;
-      color: #1e2a78;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 10px;
+      margin-top: 30px;
+    }
+
+    .download-btn img {
+      height: 50px;
+      display: block;
     }
 
     .footer {
-      margin-top: 50px;
+      margin-top: 30px;
       font-size: 12px;
-      opacity: 0.7;
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <img class="app-icon" src="sleep_icon.png" alt="Sleep Calculator Icon" />
     <h1>Sleep Calculator</h1>
     <p>Find the best time to sleep based on your schedule.</p>
 
-    <a class="button" href="#">Download on App Store</a>
+    <a class="download-btn" href="https://apps.apple.com/us/app/sleep-calculator/id6761266081">
+      <img src="download_icon.svg" alt="Download on the App Store" />
+    </a>
 
     <div class="footer">
-      <p>Contact: thanhhv911@gmail.com</p>
+      <p>Contact: <a href="mailto:thanhhv911@gmail.com" style="color: #1e2a78;">thanhhv911@gmail.com</a></p>
     </div>
   </div>
 </body>
